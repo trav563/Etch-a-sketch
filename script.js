@@ -1,6 +1,28 @@
+function getSize(){
+    let gridSize = document.querySelector(".gridSize");
+    let h3 = document.querySelector("h3");
+    let h4 = document.querySelector(".wrongInput");
+
+
+    if(gridSize.value < 2 || gridSize.value > 100){
+        h4 = document.createElement('h4');
+        h4.classList.add(`wrongInput`);
+        h4.innerText = "Please select a number between 2 and 100!";
+        h3.appendChild(h4);
+        return;
+    } else {
+        if(h4) {
+            h3.removeChild(h4);
+        }
+    let value = parseInt(gridSize.value);
+    createBoard(value);
+    }
+
+    }
+
 function createBoard(size){
     let container = document.querySelector(".container");
-    let grid = document.querySelector(".grid");
+    container.innerHTML = "";
 
 container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
 container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
@@ -13,6 +35,8 @@ for(i = 0; i < size; i++){
     }
     
 }
-}
+} 
 
-createBoard(40);
+document.addEventListener("DOMContentLoaded", function(){
+})
+
