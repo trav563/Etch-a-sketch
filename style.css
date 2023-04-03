@@ -10,6 +10,7 @@ body {
     height: 500px;
     display: grid;
     border: 1px solid black;
+    justify-content: center;
 }
 
 .grid{
@@ -24,7 +25,7 @@ body {
 .gridSize{
     width: 100px;
     height: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid black;
     
 }

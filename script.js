@@ -1,3 +1,5 @@
+
+    
 let container = document.querySelector(".container");
 container.innerHTML = "";
 
@@ -14,8 +16,9 @@ for(i = 0; i < 16; i++){
             this.classList.add("black");
         })
 }
-
 }
+
+ 
 
 function getSize(){
     let gridSize = document.querySelector(".gridSize");
@@ -62,7 +65,6 @@ for(i = 0; i < size; i++){
     
 }
 } 
-
 
 document.addEventListener("DOMContentLoaded", function(){
 })
